@@ -53,6 +53,9 @@ angular.module("TealiumHelper", ["TealiumHelper.data"])
     setConfigValue: function ( key, value ) {
       config[key] = value
     },
+    getConfig: function() {
+      return config
+    },
     setViewIdMap: tealiumDataProvider.setViewIdMap,
     addViewIdMapEntry: tealiumDataProvider.addViewIdMapEntry,
     $get: [ "tealiumData", "$location", function(tealiumData, $location) {
